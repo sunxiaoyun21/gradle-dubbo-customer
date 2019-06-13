@@ -1,0 +1,25 @@
+spring:
+  servlet:
+    multipart:
+      ##上传请求的大小
+      max-request-size: 10MB
+      ##上传的单文件大小
+      max-file-size: 10MB
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: gradle-dubbo-customer
+dubbo:
+  application:
+    name: gradle-dubbo-customer
+  protocol:
+    name: dubbo
+    port: 20880
+  provider:
+    timeout: 10000
+  consumer:
+    check: false
+
+
+web:
+  uploadPath: D:/File/image
